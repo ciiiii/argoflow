@@ -39,17 +39,17 @@ spec:
       - name: extraArgs.skip-provider-button
         value: "true"
       - name: extraArgs.cookie-domain
-        value: .<<__domain__>>
+        value: .my-cluster.my-domain.com
       - name: extraArgs.whitelist-domain
-        value: .<<__domain__>>
+        value: .my-cluster.my-domain.com
       - name: extraArgs.login-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/auth/realms/kubeflow/protocol/openid-connect/auth"
+        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/auth"
       - name: extraArgs.redeem-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/auth/realms/kubeflow/protocol/openid-connect/token"
+        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
       - name: extraArgs.profile-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       - name: extraArgs.validate-url
-        value: "https://<<__subdomain_auth__>>.<<__domain__>>/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       - name: extraArgs.scope
         value: email
       - name: extraArgs.scope

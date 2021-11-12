@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: <<__subdomain_auth__>>.<<__domain__>>
+  commonName: auth.my-cluster.my-domain.com
   dnsNames:
-    - <<__subdomain_auth__>>.<<__domain__>>
+    - auth.my-cluster.my-domain.com

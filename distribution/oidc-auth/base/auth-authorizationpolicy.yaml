@@ -13,10 +13,10 @@ spec:
   - to:
     - operation:
         hosts:
-        - "<<__subdomain_auth__>>.<<__domain__>>"
-        - "<<__subdomain_dashboard__>>.<<__domain__>>" # needed for redirect after authentication
-        - "<<__subdomain_serving__>>.<<__domain__>>" # needed for redirect after authentication
-        - "*.<<__subdomain_serving__>>.<<__domain__>>" # needed for redirect after authentication
+        - "auth.my-cluster.my-domain.com"
+        - "kubeflow.my-cluster.my-domain.com" # needed for redirect after authentication
+        - "serving.my-cluster.my-domain.com" # needed for redirect after authentication
+        - "*.serving.my-cluster.my-domain.com" # needed for redirect after authentication
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy

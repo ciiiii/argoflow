@@ -74,8 +74,8 @@
             "clientAuthenticatorType": "client-secret",
             "secret": "",
             "redirectUris": [
-                "https://<<__subdomain_dashboard__>>.<<__domain__>>",
-                "https://<<__subdomain_dashboard__>>.<<__domain__>>/oauth2/callback"
+                "https://kubeflow.my-cluster.my-domain.com",
+                "https://kubeflow.my-cluster.my-domain.com/oauth2/callback"
             ],
             "webOrigins": []
         }

@@ -40,25 +40,25 @@ spec:
       - name: extraArgs.skip-provider-button
         value: "true"
       - name: extraArgs.cookie-domain
-        value: .<<__domain__>>
+        value: .my-cluster.my-domain.com
       - name: extraArgs.whitelist-domain
-        value: .<<__domain__>>
+        value: .my-cluster.my-domain.com
       - name: extraArgs.oidc-issuer-url
-        value: <<__oidc.issuer__>>
+        value: https://auth.my-cluster.my-domain.com
       - name: extraArgs.scope
-        value: <<__oidc.scope__>>
+        value: openid profile email
       - name: extraArgs.user-id-claim
-        value: <<__oidc.user_id_claim__>>
+        value: email
       # - name: extraArgs.login-url
-      #   value: "<<__oidc.issuer__>>/auth/realms/kubeflow/protocol/openid-connect/auth"
+      #   value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/auth"
       # - name: extraArgs.oidc-jwks-url
-      #   value: "<<__oidc.issuer__>>/keys"
+      #   value: "https://auth.my-cluster.my-domain.com/keys"
       # - name: extraArgs.redeem-url
-      #   value: "<<__oidc.issuer__>>/auth/realms/kubeflow/protocol/openid-connect/token"
+      #   value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
       # - name: extraArgs.profile-url
-      #   value: "<<__oidc.issuer__>>/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+      #   value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       # - name: extraArgs.validate-url
-      #   value: "<<__oidc.issuer__>>.nl/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+      #   value: "https://auth.my-cluster.my-domain.com.nl/auth/realms/kubeflow/protocol/openid-connect/userinfo"
       # - name: extraArgs.scope
       #   value: email
       # - name: extraArgs.scope
