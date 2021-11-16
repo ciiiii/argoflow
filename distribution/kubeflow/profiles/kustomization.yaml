@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: kubeflow
 
 resources:
-- hub.fastgit.org/kubeflow/manifests/common/user-namespace/base
+- https://hub.fastgit.org/kubeflow/manifests/common/user-namespace/base
