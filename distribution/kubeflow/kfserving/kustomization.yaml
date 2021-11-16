@@ -4,6 +4,9 @@ kind: Kustomization
 resources:
 - https://hub.fastgit.org/kserve/kserve/config/overlays/kubeflow?ref=release-0.5
 
+patchesStrategicMerge:
+- patches/inferenceservice.yaml
+
 images:
 - name: gcr.io/kfserving/kfserving-controller
   newName: gcr.oneitfarm.com/kfserving/kfserving-controller
@@ -12,3 +15,4 @@ images:
 - name: gcr.io/kubebuilder/kube-rbac-proxy
   newName: gcr.oneitfarm.com/kubebuilder/kube-rbac-proxy
   newTag: v0.4.0
+#ref: https://github.com/kserve/kserve/blob/63e8153aa0bd0245577514a9d32540eafef23145/config/configmap/inferenceservice.yaml
