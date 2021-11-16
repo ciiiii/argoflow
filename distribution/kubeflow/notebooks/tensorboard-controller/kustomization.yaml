@@ -8,3 +8,6 @@ images:
 - name: public.ecr.aws/j1r0q0g6/notebooks/tensorboard-controller
   newName: public.ecr.aws/j1r0q0g6/notebooks/tensorboard-controller
   newTag: master-18264c8f
+- name: gcr.io/kubebuilder/kube-rbac-proxy
+  newName: gcr.oneitfarm.com/kubebuilder/kube-rbac-proxy
+  newTag: v0.4.0
