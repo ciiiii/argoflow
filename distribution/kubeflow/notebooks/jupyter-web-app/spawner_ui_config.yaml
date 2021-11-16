@@ -21,7 +21,7 @@ data:
     # Note that some values can be templated. Such values are the names of the
     # Volumes as well as their StorageClass
     spawnerFormDefaults:
-    # container image source available at https://github.com/pluralsh/kubeflow-notebooks
+    # container image source available at https://github.com.cnpmjs.org/pluralsh/kubeflow-notebooks
       image:
         # The container Image for the user's Jupyter Notebook
         value: ghcr.io/pluralsh/kubeflow-notebooks-jupyter-scipy:v1.0.0
