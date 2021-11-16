@@ -665,6 +665,8 @@ spec:
               cpu: 100m
               memory: 100Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: SYSTEM_NAMESPACE
               valueFrom:
                 fieldRef:
@@ -740,6 +742,8 @@ spec:
         - name: dispatcher
           image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:ac30b62fa390b01c24a9bb891c4b8aa7a8c6c747a5182592d81af58d65eaa65c
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: SYSTEM_NAMESPACE
               value: ''
               valueFrom:
@@ -885,6 +889,8 @@ spec:
               cpu: 200m
               memory: 200Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: SYSTEM_NAMESPACE
               valueFrom:
                 fieldRef:

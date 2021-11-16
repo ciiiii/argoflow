@@ -2223,6 +2223,8 @@ spec:
               cpu: 1000m
               memory: 600Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             # Run Activator with GC collection when newly generated memory is 500%.
             - name: GOGC
               value: "500"
@@ -2371,6 +2373,8 @@ spec:
               cpu: 1000m
               memory: 1000Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -2499,6 +2503,8 @@ spec:
               cpu: 1000m
               memory: 1000Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -2659,6 +2665,8 @@ spec:
               cpu: 500m
               memory: 500Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: POD_NAME
               valueFrom:
                 fieldRef:

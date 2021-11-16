@@ -392,6 +392,8 @@ spec:
               cpu: 300m
               memory: 400Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: SYSTEM_NAMESPACE
               valueFrom:
                 fieldRef:
@@ -470,6 +472,8 @@ spec:
               cpu: 200m
               memory: 200Mi
           env:
+            - name: KUBERNETES_MIN_VERSION
+              value: "1.17.0"
             - name: SYSTEM_NAMESPACE
               valueFrom:
                 fieldRef:
