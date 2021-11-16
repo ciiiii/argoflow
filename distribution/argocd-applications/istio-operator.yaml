@@ -12,7 +12,7 @@ spec:
     helm:
       parameters:
       - name: hub
-        value: docker.io/istio
+        value: hub.oneitfarm.com/istio
       - name: tag
         value: 1.10.1 # istio/operator
   destination:

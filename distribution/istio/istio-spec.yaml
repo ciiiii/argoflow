@@ -6,7 +6,7 @@ metadata:
 spec:
   profile: default
   tag: 1.10.1 # istio/operator
-  hub: docker.io/istio
+  hub: hub.oneitfarm.com/istio
   meshConfig:
     accessLogFile: /dev/stdout
     enablePrometheusMerge: true
