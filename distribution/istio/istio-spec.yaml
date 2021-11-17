@@ -24,6 +24,10 @@ spec:
             port: 443
             protocol: TCP
             targetPort: 8443
+          - name: status-port
+            port: 15021
+            protocol: TCP
+            targetPort: 15021
   meshConfig:
     accessLogFile: /dev/stdout
     enablePrometheusMerge: true
