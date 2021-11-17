@@ -7,12 +7,11 @@ spec:
   profile: default
   tag: 1.10.1 # istio/operator
   hub: hub.oneitfarm.com/istio
-  gateways:
-    components:
-      ingressGateway:
-        k8s:
-          service:
-            type: NodePort
+  components:
+    ingressGateways:
+      k8s:
+        service:
+          type: NodePort
   meshConfig:
     accessLogFile: /dev/stdout
     enablePrometheusMerge: true
