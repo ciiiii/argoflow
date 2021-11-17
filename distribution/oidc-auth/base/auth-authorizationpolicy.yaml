@@ -14,7 +14,7 @@ spec:
     - operation:
         hosts:
         - "auth.my-cluster.my-domain.com"
-        - "kubeflow.my-cluster.my-domain.com" # needed for redirect after authentication
+        - "kubeflow.istio.ciiiii.cloudns.ph" # needed for redirect after authentication
         - "serving.my-cluster.my-domain.com" # needed for redirect after authentication
         - "*.serving.my-cluster.my-domain.com" # needed for redirect after authentication
 ---

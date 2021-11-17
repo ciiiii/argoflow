@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: gateways-issuer
     kind: ClusterIssuer
-  commonName: kubeflow.my-cluster.my-domain.com
+  commonName: kubeflow.istio.ciiiii.cloudns.ph
   dnsNames:
-    - kubeflow.my-cluster.my-domain.com
+    - kubeflow.istio.ciiiii.cloudns.ph

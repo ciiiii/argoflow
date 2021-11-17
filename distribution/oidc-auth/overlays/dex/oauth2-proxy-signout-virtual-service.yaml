@@ -7,7 +7,7 @@ spec:
   gateways:
   - kubeflow/kubeflow-gateway
   hosts:
-  - kubeflow.my-cluster.my-domain.com
+  - kubeflow.istio.ciiiii.cloudns.ph
   http:
   - match:
     - uri:

@@ -17,5 +17,5 @@ spec:
   - to:
     - operation:
         hosts:
-        - kubeflow.my-cluster.my-domain.com
+        - kubeflow.istio.ciiiii.cloudns.ph
         - serving.my-cluster.my-domain.com

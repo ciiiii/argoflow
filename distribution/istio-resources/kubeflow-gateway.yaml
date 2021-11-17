@@ -8,7 +8,7 @@ spec:
     istio: ingressgateway
   servers:
   - hosts:
-    - kubeflow.my-cluster.my-domain.com
+    - kubeflow.istio.ciiiii.cloudns.ph
     port:
       name: http
       number: 80
@@ -17,7 +17,7 @@ spec:
     tls:
       httpsRedirect: true
   - hosts:
-    - kubeflow.my-cluster.my-domain.com
+    - kubeflow.istio.ciiiii.cloudns.ph
     port:
       name: https
       number: 443

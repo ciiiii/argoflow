@@ -7,7 +7,7 @@ spec:
   gateways:
   - kubeflow/kubeflow-gateway
   hosts:
-  - kubeflow.my-cluster.my-domain.com
+  - kubeflow.istio.ciiiii.cloudns.ph
   http:
   - match:
     - uri:
@@ -22,4 +22,4 @@ spec:
     headers:
       request:
         set:
-          X-Auth-Request-Redirect: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/logout?redirect_uri=https%%3A%%2F%%2Fkubeflow.my-cluster.my-domain.com"
+          X-Auth-Request-Redirect: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/logout?redirect_uri=https%%3A%%2F%%2Fkubeflow.istio.ciiiii.cloudns.ph"
