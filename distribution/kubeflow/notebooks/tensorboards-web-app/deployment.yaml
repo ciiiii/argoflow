@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: tensorboards-web-app
+        env:
+        - name: APP_PREFIX
+          value: $(TWA_PREFIX)
+        - name: USERID_HEADER
+          value: $(TWA_USERID_HEADER)
+        - name: USERID_PREFIX
+          value: $(TWA_USERID_PREFIX)
+        - name: APP_SECURE_COOKIES
+          value: "false"
