@@ -1,0 +1,15 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata: # kpt-merge: /workflow-controller
+  name: workflow-controller
+spec:
+  template:
+    spec:
+      containers:
+      - name: workflow-controller
+        args:
+          - --configmap
+          - workflow-controller-configmap
+          - --executor-image
+          - hub.oneitfarm.com/argoproj/argoexec:v2.12.9
