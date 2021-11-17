@@ -9,7 +9,7 @@ spec:
   hub: hub.oneitfarm.com/istio
   components:
     ingressGateways:
-      k8s:
+    - k8s:
         service:
           type: NodePort
   meshConfig:
