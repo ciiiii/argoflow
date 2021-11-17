@@ -8,11 +8,5 @@ spec:
       containers:
       - name: volumes-web-app
         env:
-        - name: APP_PREFIX
-          value: $(VWA_PREFIX)
-        - name: USERID_HEADER
-          value: $(VWA_USERID_HEADER)
-        - name: USERID_PREFIX
-          value: $(VWA_USERID_PREFIX)
         - name: APP_SECURE_COOKIES
           value: "false"
