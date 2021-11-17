@@ -8,27 +8,31 @@ spec:
     spec:
       containers:
       - name: profile-controller
-        command: ["python", "/hooks/sync.py"]
-        envFrom:
-        - configMapRef:
-            name: kubeflow-pipelines-profile-controller-env
-        env:
-        - name: VISUALIZATION_SERVER_IMAGE
-          value: "gcr.oneitfarm.com/ml-pipeline/visualization-server"
-        - name: FRONTEND_IMAGE
-          value: "gcr.oneitfarm.com/ml-pipeline/frontend"
-        - name: KFP_VERSION
-          valueFrom:
-            configMapKeyRef:
-              name: pipeline-install-config
-              key: appVersion
-        - name: MINIO_ACCESS_KEY
-          valueFrom:
-            secretKeyRef:
-              name: mlpipeline-minio-artifact
-              key: accesskey
-        - name: MINIO_SECRET_KEY
-          valueFrom:
-            secretKeyRef:
-              name: mlpipeline-minio-artifact
-              key: secretkey
+        # envFrom:
+        # - configMapRef:
+        #     name: kubeflow-pipelines-profile-controller-env
+        # env:
+        # - name: VISUALIZATION_SERVER_IMAGE
+        #   value: "gcr.oneitfarm.com/ml-pipeline/visualization-server"
+        # - name: FRONTEND_IMAGE
+        #   value: "gcr.oneitfarm.com/ml-pipeline/frontend"
+        # - name: KFP_VERSION
+        #   valueFrom:
+        #     configMapKeyRef:
+        #       name: pipeline-install-config
+        #       key: appVersion
+        # - name: MINIO_ACCESS_KEY
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: mlpipeline-minio-artifact
+        #       key: accesskey
+        # - name: MINIO_SECRET_KEY
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: mlpipeline-minio-artifact
+        #       key: secretkey
+        volumes:
+        - configMap:
+            defaultMode: 420
+            name: kubeflow-pipelines-profile-controller-code-overwrite
+          name: hooks
