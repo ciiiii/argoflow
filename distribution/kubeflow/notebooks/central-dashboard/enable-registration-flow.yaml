@@ -11,3 +11,5 @@ spec:
         env:
         - name: REGISTRATION_FLOW
           value: "true"
+        - name: APP_SECURE_COOKIES
+          value: "false"
