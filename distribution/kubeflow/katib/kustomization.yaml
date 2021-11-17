@@ -4,6 +4,9 @@ kind: Kustomization
 resources:
 - https://hub.fastgit.org/kubeflow/katib/manifests/v1beta1/installs/katib-with-kubeflow?ref=036296a2e8e36e44077396fedd687953baf5dbc4 # tag=0.11.1
 
+patchesStrategicMerge:
+- ui-deployment.yaml
+
 images:
 - name: hub.oneitfarm.com/kubeflowkatib/katib-controller
   newName: hub.oneitfarm.com/kubeflowkatib/katib-controller
