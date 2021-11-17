@@ -13,6 +13,17 @@ spec:
       k8s:
         service:
           type: NodePort
+          ports:
+          - name: http2
+            nodePort: 30080
+            port: 80
+            protocol: TCP
+            targetPort: 8080
+          - name: https
+            nodePort: 30443
+            port: 443
+            protocol: TCP
+            targetPort: 8443
   meshConfig:
     accessLogFile: /dev/stdout
     enablePrometheusMerge: true
